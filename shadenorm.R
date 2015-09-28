@@ -1,7 +1,6 @@
 # Shadenorm function
 # by Tony Cookson
-# http: /  / www.r - bloggers.com / how - to - shade -
-under - a - normal - density - in-r /
+# http://www.r-bloggers.com/how-to-shade-under-a-normal-density-in-r/
   shadenorm = function(below = NULL, above =
                        NULL, pcts = c(0.025,0.975), mu = 0,
                        sig = 1, numpts = 500, color = "gray", dens = 40, justabove = FALSE,
