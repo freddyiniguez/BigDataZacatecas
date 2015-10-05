@@ -11,3 +11,11 @@ names(mm.counts) <- c("blue", "brown", "green", "orange", "red", "yellow")
 percents <- round(mm.counts/sum(mm.counts)*100)
 my.labels <- paste(names(mm.counts), " ", percents, "%", sep = "")
 pie(mm.counts, labels = my.labels, main = "My M&M Color Distribution", col = names(mm.counts))
+# First we obtain the percents of each color, and then, using the 'paste' command, assigned the labels according to the percents. 
+# It is important to notice that there is a blank space between te labels and the percents. This because the default behaviour adds two or three adittional spaces, and we don't want this.
+
+# * Waffle Charts are an alternative to Pie Charts, but they are still useful to communicate how parts of a data set are related to the whole.
+# * To be able to plot Waffle Charts, we need to install the packages or imported directly from GitHub repo.
+install.packages("devtools")
+library(devtools)
+devtools::install_github("hrbrmstr/waffle")
