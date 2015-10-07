@@ -19,3 +19,6 @@ pie(mm.counts, labels = my.labels, main = "My M&M Color Distribution", col = nam
 install.packages("devtools")
 library(devtools)
 devtools::install_github("hrbrmstr/waffle")
+# * All we need to plot a waffle chart, we need a vector of values and use the waffle function:
+# * There is an important thing that in the book does not mention. To correctly use the waffle function, you need to use waffle::waffle() functions instead waffle(). Like this:
+waffle::waffle(mm.counts, rows = 7, colors = names(mm.counts), title = "M&M Colors", xlab = "1 square = 1 M&Ms")
